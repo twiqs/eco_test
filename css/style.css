@@ -134,7 +134,7 @@ section{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    max-height: 90vh;
 }
   .input{
     border: 1px solid #ccc;
@@ -185,13 +185,16 @@ section{
   }
   
   .form{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 	margin: 0 auto;
 	width: 500px;
+  }
+  .auto_tit{
+	margin-bottom: 10px;
   }
   .input_txt{
     width: 100%;
