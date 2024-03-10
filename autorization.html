@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/user?f=classic&s=solid">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <section class="auto">
         <div class="container">
             <div class="form">
+                
+            <h2 class="auto_tit">Log in</h2>
 
-                <div class="input_wrap input_wrap__login">
+                <div class="input_wrap input_wrap__login flex">
+                    <label for="login__username">
+                        <i class="fa-solid fa-user"></i>
+                    </label>
                     <input class="input input__login" placeholder="введите логин">
                 </div>
                 <p class="input_txt input_txt__login">неправильный логин</p>
 
-            <div class="input_wrap input_wrap__psw">
-                <input type="password" class="input input__psw" placeholder="введите текст">
+                <div class="input_wrap input_wrap__psw flex">
+                    <label for="login__password"><i class="fa-solid fa-user"></i></label>
+                    <input type="password" class="input input__psw" placeholder="введите текст">
+                </div>
+                <p class="input_txt input_txt__psw">неправильный psw</p>
+
+                <button class="btn" type="button">войти</button>
             </div>
-            <p class="input_txt input_txt__psw">неправильный psw</p>
 
-            <button class="btn" type="button">войти</button>
-        </div>
-
-<div class="success">
-    <h1>welcome to our web-site <span class="js-name"></span></h1>
-</div>
+            <div class="success">
+                <h1>welcome to our web-site <span class="js-name"></span></h1>
+            </div>
 
         </div>
     </section>
+
+
     <script src="js/core.js"></script>
 </body>
+
 </html>
