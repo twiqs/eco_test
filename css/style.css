@@ -327,3 +327,6 @@ nav ul li:hover>ul {
     text-align: center;
     font-style: 50px;
   }
+.login__username{
+  padding: 14px;
+}
