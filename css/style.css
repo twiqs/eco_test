@@ -371,66 +371,61 @@ button.active {
 }
 
 /* accordeon */
-.acor-container {
-  margin: 20px 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
-.acor-container .acor-body {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-  height: 0;
-  color: rgba(0, 0, 0, 0);
-  background-color: #bad3bc;
-  line-height: 18px;
-  padding: 0 30px;
-  box-sizing: border-box;
-  transition: color 0.5s, padding 0.5s;
-  overflow: hidden;
-  font-family: Verdana, sans-serif;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+
+
+.faq_all {
+	text-align: center;
+	
 }
-.acor-container .acor-body p {
-  margin: 0 0 10px;
+
+.accordion {
+	max-width: 100%;
+	text-align: center;
+	line-height: 22px;
+	transition: transform .59s;
 }
-.acor-container label {
-  cursor: pointer;
-/* background: linear-gradient(180deg, #000 0%,  #08144e 16%, #13278b 92%, #415945 100%);
-text-transform: uppercase; */
-  background-color: #2a432f;
-  display: block;
-  padding: 15px 20px;
-  width: 100%;
-  color: #ffffff;
-  font-weight: 300;
-  box-sizing: border-box;
-  z-index: 100;
-  font-family: Verdana, sans-serif;  
-  font-size: 18px;
-  margin: 0 0 5px;
-  transition: color .35s;
+
+article {
+	padding: 1em;
+	margin: 1em auto;
+	border-radius: 20px;
+	background: #2a432f;
+	color: #ffffff;
+	transition: transform .5s;
 }
-.acor-container label:hover {
-  color: #FFF;
+
+input[type="radio"] {
+	appearance: none;
+	position: fixed;
+	top: -100vh;
+	left: -100vh;
+
+	&~div {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	&:checked~div {
+		max-height: 200px;
+	}
 }
-.acor-container input{
-  display: none;
+
+.ques {
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
-.acor-container label:before {
-  content: '\276F';
-  float: right;
-}
-.acor-container input:checked + label {
-  background-color: #415945;
-  color: #FFF;
-  box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
-}
-.acor-container input:checked + label:before {
-  transition: transform .35s;
-  transform: rotate(90deg);
-}
-.acor-container input:checked + label + .acor-body {
-  height: auto;
-  margin-top: -5px;
-  color: #000;
-  padding: 20px 30px 10px;
+
+.ques_txt{
+	font-size: 15px;
 }
