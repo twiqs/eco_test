@@ -1,5 +1,5 @@
-body{
-	height: 100%;
+body {
+  height: 100%;
   background: rgb(229, 232, 231);
 }
 
@@ -118,7 +118,8 @@ section {
 .hover:hover {
   color: #BE963F;
 }
-.flex{
+
+.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -128,109 +129,111 @@ section {
 /* Malika */
 
 .header_logo {
-	width: 80px;
-	width: 80px;
-	border-radius: 100%;
-	overflow: hidden;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+  width: 80px;
+  width: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .btn_header {
-	z-index: 20;
+  z-index: 20;
 }
 
 .header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	padding: 15px;
-	
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px;
+
 }
 
 .header::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #7cd341;
-	z-index: 10;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7cd341;
+  z-index: 10;
 }
 
 .header_body {
-	position: relative;
-	height: 80px;
+  position: relative;
+  height: 80px;
 
 }
 
 .header_logo {
-	z-index: 20;
+  z-index: 20;
 }
 
 .header_list {
-	gap: 30px;
+  gap: 30px;
 
 }
 
 nav ul li ul {
-	position: absolute;
-	margin-top: 50px;
-	display: none;
+  position: absolute;
+  margin-top: 50px;
+  display: none;
 }
 
 nav ul li:hover>ul {
-	display: initial;
+  display: initial;
 }
 
 .header_link {
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 26px;
-	letter-spacing: 0em;
-	color: #183119;
-	transition: 1s;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #183119;
+  transition: 1s;
 }
+
 .header_link:hover {
-	color: #e7e7ec;
-	border-bottom: 1px solid #f0f0f4;
-	transition: 1s;
+  color: #e7e7ec;
+  border-bottom: 1px solid #f0f0f4;
+  transition: 1s;
 }
 
 .header_menu {
-	margin-left: -250px;
-	z-index: 20;
+  margin-left: -250px;
+  z-index: 20;
 }
 
 .header_burger {
-	display: none;
+  display: none;
 }
 
 /* go-back */
 
 .back-to-top {
-	background-image: url(../img/icons/go-back.svg);
-	background-position: center;
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 50px;
-	border-radius: 15%;
-	font-size: 20px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	z-index: 9999;
-	transition: 1s;
-	display: block;
+  background-image: url(../img/icons/go-back.svg);
+  background-position: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 15%;
+  font-size: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: 1s;
+  display: block;
 }
 
 .back-to-top:hover {
-	transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 
@@ -334,6 +337,90 @@ button.active {
   min-height: 200px;
 }
 
+
+/* accordeon */
+.acor-container {
+  margin: 20px 0;
+}
+
+.acor-container .acor-body {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: #bad3bc;
+  line-height: 18px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  transition: color 0.5s, padding 0.5s;
+  overflow: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.acor-container .acor-body p {
+  margin: 0 0 10px;
+}
+
+.acor-container label {
+  cursor: pointer;
+  /* background: linear-gradient(180deg, #000 0%,  #08144e 16%, #13278b 92%, #415945 100%);
+text-transform: uppercase; */
+  background-color: #2a432f;
+  display: block;
+  padding: 15px 20px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 300;
+  box-sizing: border-box;
+  z-index: 100;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0 0 5px;
+  transition: color .35s;
+}
+
+.acor-container label:hover {
+  color: #FFF;
+}
+
+.acor-container input {
+  display: none;
+}
+
+.acor-container label:before {
+  content: '\276F';
+  float: right;
+}
+
+.acor-container input:checked+label {
+  background-color: #415945;
+  color: #FFF;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+
+.acor-container input:checked+label:before {
+  transition: transform .35s;
+  transform: rotate(90deg);
+}
+
+.acor-container input:checked+label+.acor-body {
+  height: auto;
+  margin-top: -5px;
+  color: #000;
+  padding: 20px 30px 10px;
+}
+
+/* autorization */
+.auto {
+  background: #b8bcbc;
+}
+
+.input__login {
+  background: #bfd5d1;
+}
+
 .form {
   height: 80vh;
   display: flex;
@@ -342,6 +429,7 @@ button.active {
   flex-direction: column;
   margin: 0 auto;
   width: 500px;
+  background: #eef0f0;
 }
 
 .auto_tit {
@@ -369,68 +457,6 @@ button.active {
   background: #000;
   padding: 14px;
 }
-
-/* accordeon */
-.acor-container {
-  margin: 20px 0;
-}
-.acor-container .acor-body {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-  height: 0;
-  color: rgba(0, 0, 0, 0);
-  background-color: #bad3bc;
-  line-height: 18px;
-  padding: 0 30px;
-  box-sizing: border-box;
-  transition: color 0.5s, padding 0.5s;
-  overflow: hidden;
-  font-family: Verdana, sans-serif;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
-}
-.acor-container .acor-body p {
-  margin: 0 0 10px;
-}
-.acor-container label {
-  cursor: pointer;
-/* background: linear-gradient(180deg, #000 0%,  #08144e 16%, #13278b 92%, #415945 100%);
-text-transform: uppercase; */
-  background-color: #2a432f;
-  display: block;
-  padding: 15px 20px;
-  width: 100%;
-  color: #ffffff;
-  font-weight: 300;
-  box-sizing: border-box;
-  z-index: 100;
-  font-family: Verdana, sans-serif;  
-  font-size: 18px;
-  margin: 0 0 5px;
-  transition: color .35s;
-}
-.acor-container label:hover {
-  color: #FFF;
-}
-.acor-container input{
-  display: none;
-}
-.acor-container label:before {
-  content: '\276F';
-  float: right;
-}
-.acor-container input:checked + label {
-  background-color: #415945;
-  color: #FFF;
-  box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
-}
-.acor-container input:checked + label:before {
-  transition: transform .35s;
-  transform: rotate(90deg);
-}
-.acor-container input:checked + label + .acor-body {
-  height: auto;
-  margin-top: -5px;
-  color: #000;
-  padding: 20px 30px 10px;
+.input_wrap{
+  border: none;
 }
