@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fontawesome.com/icons/user?f=classic&s=solid">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -14,24 +15,30 @@
     <section class="auto">
         <div class="container">
             <div class="form">
-                
-            <h2 class="auto_tit">Log in</h2>
+                <a href="" class="link_sign_up ">Sign up</a>
 
-                <div class="input_wrap input_wrap__login flex">
-                    <label for="login__username">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-                    </label>
-                    <input class="input input__login" placeholder="введите логин">
+                <h2 class="auto_tit">Log in</h2>
+                <div class="form_info">
+
+                    <div class="input_wrap input_wrap__login flex">
+
+                        <input class="input input__login" placeholder="Введите логин">
+                        <i class="form-ic fa-solid fa-user"></i>
+                    </div>
+                    <p class="input_txt input_txt__login">неправильный логин</p>
+
+                    <div class="input_wrap input_wrap__psw flex">
+                        <i class="form-ic fa-solid fa-lock"></i>
+                        <input type="password" class="input input__psw" placeholder="Введите текст">
+                    </div>
+                    <p class="input_txt input_txt__psw">неправильный psw</p>
+                    <div class="form_terms flex">
+                        <input type="checkbox" class="form_terms">
+                    </div>
+                    
+
+                    <button class="btn form_btn" type="button">Login</button>
                 </div>
-                <p class="input_txt input_txt__login">неправильный логин</p>
-
-                <div class="input_wrap input_wrap__psw flex">
-                    <label for="login__password"><i class="fa-solid fa-user"></i></label>
-                    <input type="password" class="input input__psw" placeholder="введите текст">
-                </div>
-                <p class="input_txt input_txt__psw">неправильный psw</p>
-
-                <button class="btn" type="button">войти</button>
             </div>
 
             <div class="success">
@@ -42,7 +49,7 @@
     </section>
 
 
-    <script src="js/core.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
