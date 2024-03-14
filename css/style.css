@@ -410,14 +410,15 @@ canvas {
   color: #bcbdbf;
 }
 .form {
-  padding: 30px 70px 50px 70px;
+  margin: 0 auto;
+  max-width: 1100px;
   background: rgba(38, 39, 41, 1.00);
-  display: flex;
+  /* display: flex;
   /* justify-content: center;
   align-items: center; */
-  flex-direction: column;
-  margin: 0 auto;
-  width: 500px;
+  /* flex-direction: column;
+  margin: 0 auto; */
+  /* width: 500px; */
 }
 
 .auto_tit {
@@ -506,4 +507,18 @@ canvas {
 }
 .form_terms{
   display: block;
+}
+.form_left{
+  background: url(/img/icons/form_left_3.jpg);
+  width: 500px;
+  height: 600px;
+}
+.form_tit{
+  text-align: center;
+  padding-top: 180px;
+  font-size: 40px;
+  line-height: 40px;color: #000;
+}
+.form_right{
+  padding: 30px 70px 50px 70px;
 }

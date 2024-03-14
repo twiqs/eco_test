@@ -14,30 +14,35 @@
 <body>
     <section class="auto">
         <div class="container">
-            <div class="form">
-                <a href="" class="link_sign_up ">Sign up</a>
+            <div class="form flex">
+                <div class="form_left">
+                    <h2 class="form_tit">Добро пожаловать! <br>Заполните форму <br>и получите бонусы!</h2>
+                </div>
+                <div class="form_right">
+                    <a href="" class="link_sign_up ">Sign up</a>
 
-                <h2 class="auto_tit">Log in</h2>
-                <div class="form_info">
+                    <h2 class="auto_tit">Log in</h2>
+                    <div class="form_info">
 
-                    <div class="input_wrap input_wrap__login flex">
+                        <div class="input_wrap input_wrap__login flex">
 
-                        <input class="input input__login" placeholder="Введите логин">
-                        <i class="form-ic fa-solid fa-user"></i>
+                            <input class="input input__login" placeholder="Введите логин">
+                            <i class="form-ic fa-solid fa-user"></i>
+                        </div>
+                        <p class="input_txt input_txt__login">неправильный логин</p>
+
+                        <div class="input_wrap input_wrap__psw flex">
+                            <i class="form-ic fa-solid fa-lock"></i>
+                            <input type="password" class="input input__psw" placeholder="Введите текст">
+                        </div>
+                        <p class="input_txt input_txt__psw">неправильный psw</p>
+                        <div class="form_terms flex">
+                            <input type="checkbox" class="form_terms">
+                        </div>
+
+
+                        <button class="btn form_btn" type="button">Login</button>
                     </div>
-                    <p class="input_txt input_txt__login">неправильный логин</p>
-
-                    <div class="input_wrap input_wrap__psw flex">
-                        <i class="form-ic fa-solid fa-lock"></i>
-                        <input type="password" class="input input__psw" placeholder="Введите текст">
-                    </div>
-                    <p class="input_txt input_txt__psw">неправильный psw</p>
-                    <div class="form_terms flex">
-                        <input type="checkbox" class="form_terms">
-                    </div>
-                    
-
-                    <button class="btn form_btn" type="button">Login</button>
                 </div>
             </div>
 
