@@ -212,14 +212,16 @@ nav ul li:hover>ul {
   display: none;
 }
 header{
-  position: relative;position: relative;
+  /* position: relative;position: relative; */
   width: 350px;
   border-radius: 5px;
   background: inherit;
   box-shadow: 0 0 5px black;
+  background-color: rgba(225, 221, 222, .8);
+    backdrop-filter: blur(1px);
 }
-header::before {
-  ontent: "";
+/* header::before {
+  content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -228,7 +230,7 @@ header::before {
     background: inherit;
     filter: blur(10px);
     filter: url(#blur);
-}
+} */
 
 /* go-back */
 
