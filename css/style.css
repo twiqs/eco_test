@@ -213,23 +213,22 @@ nav ul li:hover>ul {
 }
 header{
   /* position: relative;position: relative; */
-  width: 350px;
-  border-radius: 5px;
+  /* width: 350px; */
+  border-bottom-left-radius: 3px;
   background: inherit;
-  box-shadow: 0 0 5px black;
+  /* box-shadow: 0 0 5px black; */
   background-color: rgba(225, 221, 222, .8);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
 }
 /* header::before {
-  content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: inherit;
-    filter: blur(10px);
-    filter: url(#blur);
+  content: '';
+  position: fixed; /* Фиксируем на одном месте */
+  /* left: 0; right: 0; Вся ширин */
+  /* top: 0; bottom: 0; Вся высота */
+  /* z-index: -1; Фон ниже текста */
+  /* Параметры фона
+  background: url(/example/image/aquaria.jpg) center / cover no-repeat; */
+  /* filter: blur(5px); Размытие 
 } */
 
 /* go-back */
