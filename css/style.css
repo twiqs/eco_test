@@ -552,7 +552,10 @@ canvas {
 }
 
 .form_terms {
-  display: block;
+  gap: 15px;
+}
+.conditions_link{
+  color: #00B871;
 }
 
 .form_left {
