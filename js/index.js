@@ -1,6 +1,8 @@
 //AUTORIZATION 
 //NE TROGAT
-const btn = document.querySelector('.btn')
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+const btn = document.querySelector('.form_btn')
+const checkbox = document.getElementById('autoCheckbox');
 const access = {
     "Admin": "123",
     "Adelina": "qwerty",
@@ -16,23 +18,32 @@ console.log()
 
 
 
+
 btn.addEventListener('click', function () {
     let inputLogin = document.querySelector('.input__login').value
     let inputPsw = document.querySelector('.input__psw').value
+    
+    
+
 
 
     if (inputLogin in access) {
-        if (access[inputLogin] === inputPsw){
-            document.querySelector('.success').style.display = "block"
-            document.querySelector('.js-name').innerText = inputLogin
-            document.querySelector('.form').style.display = "none"
-        }else {
-        document.querySelector('.input_txt__psw').style.display = "block"
-    }
-} else {
-    document.querySelector('.input_txt__login').style.display = "block"
+        if (checkbox.checked) {
+            if (access[inputLogin] === inputPsw) {
+                confetti();
+                document.querySelector('.success').style.display = "block"
+                document.querySelector('.js-name').innerText = inputLogin
+                document.querySelector('.form').style.display = "none"
+    
+            } else {
+                document.querySelector('.input_txt__psw').style.display = "block"
+            }
+        }
+        
+    } else {
+        document.querySelector('.input_txt__login').style.display = "block"
 
-}
+    }
 
 
 
