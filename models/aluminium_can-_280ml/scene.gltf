@@ -1,0 +1,367 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 35911,
+      "max": [
+        0.8105667233467102,
+        1.738013505935669,
+        0.8105667233467102
+      ],
+      "min": [
+        -0.8105667233467102,
+        -1.8000057935714722,
+        -0.8105667233467102
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 430932,
+      "componentType": 5126,
+      "count": 35911,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 213504,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 861864,
+      "componentType": 5126,
+      "count": 577,
+      "max": [
+        1.036877989768982,
+        0.8318723440170288,
+        1.036877989768982
+      ],
+      "min": [
+        -1.036877989768982,
+        0.1705571860074997,
+        -1.036877989768982
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 868788,
+      "componentType": 5126,
+      "count": 577,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -9.238893881047261e-07,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 854016,
+      "componentType": 5125,
+      "count": 3360,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 875712,
+      "componentType": 5126,
+      "count": 4970,
+      "max": [
+        1.013401746749878,
+        6.971514701843262,
+        2.224416732788086
+      ],
+      "min": [
+        -1.0134016275405884,
+        6.837464809417725,
+        -0.9703840613365173
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 935352,
+      "componentType": 5126,
+      "count": 4970,
+      "max": [
+        0.9999901652336121,
+        1.0,
+        0.9999901652336121
+      ],
+      "min": [
+        -0.9999901652336121,
+        -0.999834418296814,
+        -0.9999901652336121
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 867456,
+      "componentType": 5125,
+      "count": 28848,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jeferson Camargo Brasil (https://sketchfab.com/sidbeyond)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/aluminium-can-280ml-c5c0dfe1199749138ae3dbf55179a36a",
+      "title": "aluminium can- 280ml"
+    },
+    "generator": "Sketchfab-15.50.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 982848,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 994992,
+      "byteOffset": 982848,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1977840,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "aluminium",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "roughnessFactor": 0.2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.5319489240646362,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5319489240646362,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5319489240646362,
+        0.0,
+        0.0,
+        -0.12481483817100525,
+        0.0,
+        1.0
+      ],
+      "name": "C��rculo_0"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        0.034968625754117966,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.034968625754117966,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.034968625754117966,
+        0.0,
+        0.0,
+        0.7442816495895386,
+        0.0,
+        1.0
+      ],
+      "name": "Circle.001_1"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_6"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        0.1287962943315506,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1287962943315506,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1287962943315506,
+        0.0,
+        0.0,
+        -0.12412634491920471,
+        0.0,
+        1.0
+      ],
+      "name": "Circle_2"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_8"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

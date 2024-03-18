@@ -1,0 +1,8 @@
+Model Information:
+* title:	aluminium can- 280ml
+* source:	https://sketchfab.com/3d-models/aluminium-can-280ml-c5c0dfe1199749138ae3dbf55179a36a
+* author:	Jeferson Camargo Brasil (https://sketchfab.com/sidbeyond)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
