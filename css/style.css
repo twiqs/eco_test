@@ -495,7 +495,8 @@ canvas {
   padding: 14px;
 }
 
-.input_wrap__login {
+.input_wrap__login,
+.input_wrap__email {
   position: relative;
 }
 
@@ -605,5 +606,8 @@ canvas {
 	margin-bottom: 20px;
 }
 .header_menu{
+  display: block;
+}
+.open{
   display: block;
 }
