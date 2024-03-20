@@ -695,22 +695,6 @@ canvas {
   display: none;
 }
 
-.input__psw_sign_up{
-  width: 360px;
-}
-.generator_ps{
-  position: relative;
-}
-.fa-key::before {
-  font-family: FontAwesome;
-  content: "\f084";
-  top: 41px;
-  left: 350px;
-}
-.fa-key{
-  left: 365px;
-}
-
 /* about */
 .about_txt {
   font-size: 20px;
