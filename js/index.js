@@ -99,3 +99,34 @@ const generateButton = document.querySelector("#generator_ps");
       passwordInput.disabled = false;
       copyButton.disabled = false;
     });
+    const displayUserDashboard = (user) => {
+        const userDashboard = document.createElement('div');
+        userDashboard.classList.add('user-dashboard');
+    
+        const heading = document.createElement('h1');
+        heading.textContent = `Welcome ${user.username}`;
+    
+        const passwordInfo = document.createElement('p');
+        passwordInfo.textContent = `Your password is: ${user.password}`;
+    
+        userDashboard.appendChild(heading);
+        userDashboard.appendChild(passwordInfo);
+    
+        document.body.appendChild(userDashboard); // Append the user dashboard to the body or any desired container
+    };
+
+
+    function createUserObject(username, password) {
+        return { username, password };
+    }
+    
+    let inputLoginSignUp= document.querySelector('.input__login').value;
+    let inputPswWSignUp = document.querySelector('.input__psw').value;
+    
+    // Creating a new object using input values
+    let newUser = createUserObject(inputLogin, inputPsw);
+    
+    // Adding the new user object to the users array
+    users.push(newUser);
+    
+    console.log(users);
