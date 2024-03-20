@@ -547,6 +547,12 @@ canvas {
   top: 11px;
   left: -70px;
 }
+.fa-at::before {
+  font-family: FontAwesome;
+  content: "\40";
+  top: 11px;
+  left: -70px;
+}
 
 .form_btn {
   background: #00B871;
