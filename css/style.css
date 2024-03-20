@@ -689,7 +689,10 @@ canvas {
 }
 
 .form_right {
-  padding: 160px 70px 20px 70px;
+  padding: 10px 70px 20px 70px;
+}
+.sign_up-form{
+  display: none;
 }
 
 /* about */
