@@ -68,34 +68,3 @@ document.addEventListener("DOMContentLoaded", function() {
         signInForm.style.display = 'none';
     });
 });
-
-
-const generateButton = document.querySelector("#generator_ps");
-    // const copyButton = document.querySelector("#copy-button");
-    const passwordInput = document.querySelector("#password_sign_up");
-
-    // Функция для генерации случайного пароля
-    const generatePassword = () => {
-      // Массив символов для включения в пароль
-      const characters =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
-
-      let password = "";
-
-      // Цикл для выбора случайных символов и добавления их в пароль
-      // 12 - это количество символов в пароле
-      for (let i = 0; i < 12; i++) {
-        password += characters.charAt(
-          Math.floor(Math.random() * characters.length)
-        );
-      }
-
-      return password;
-    };
-
-    // Прослушиватель событий для кнопки создания пароля
-    generateButton.addEventListener("click", () => {
-      passwordInput.value = generatePassword();
-      passwordInput.disabled = false;
-      copyButton.disabled = false;
-    });
