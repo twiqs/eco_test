@@ -291,9 +291,7 @@ b {
     display: block;
 }
 
-.what {
-    background-color: #e5e5e5;
-}
+
 
 .tit_green {
     color: rgb(16, 120, 61);
@@ -305,7 +303,7 @@ b {
     line-height: 20px;
     text-shadow: 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 5vh var(--lights);
     max-width: 80%;
-    color: rgb(12, 12, 12);
+    color: var(--body-color);
     margin: 15px auto;
     text-align: left;
 }

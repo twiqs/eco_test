@@ -756,3 +756,7 @@ model-viewer{
 	color: #106b41;
 	margin: 0 auto;
 }
+
+.wrapper{
+  display: none;
+}
