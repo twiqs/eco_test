@@ -52,3 +52,19 @@ const users = [
 //         // text.style.fontWeight = 700
 //     }
 // })
+document.addEventListener("DOMContentLoaded", function() {
+    const signInBtn = document.querySelector('.sign_in-btn');
+    const signUpBtn = document.querySelector('.sign_up-btn');
+    const signInForm = document.querySelector('.sign_in-form');
+    const signUpForm = document.querySelector('.sign_up-form');
+
+    signInBtn.addEventListener('click', function() {
+        signInForm.style.display = 'block';
+        signUpForm.style.display = 'none';
+    });
+
+    signUpBtn.addEventListener('click', function() {
+        signUpForm.style.display = 'block';
+        signInForm.style.display = 'none';
+    });
+});
