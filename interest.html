@@ -10,56 +10,32 @@
 </head>
 
 <body>
-    <header class="header">
-		<div class="container">
-			<div class="header_body flex">
-				<div class="header_burger">
-					<span></span>
-				</div>
-				<a href="index.html" class="header_logo">
-					<img src="img/icons/logotrans.png" alt="">
-				</a>
-
-				<nav class="header_menu">
-					<ul class="header_list flex">
-						<li>
-							<a href="index.html" class="header_link">Главная </a>
-						</li>
-						<li>
-							<a href="#case" class="header_link">О проекте </a>
-						</li>
-                        <li>
-							<a href="interest.html" class="header_link">Интересное</a>
-						</li>
-						<li>
-							<a href="#services" class="header_link">Сбор &bigtriangledown;</a>
-
-							<ul>
-								<li><a href="#" class="header_link">Макулатура</a></li>
-								<li><a href="#" class="header_link">Пластик</a></li>
-								<li><a href="glass.html" class="header_link">Стекло</a></li>
-								<li><a href="metal.html" class="header_link">Металл</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#blog" class="header_link"></a>
-						</li>
-
-					</ul>
-				</nav>
-				<div class="header_login-btns flex">
-						<a class="header_login-btn sign_in-btn btn" href="autorization.html" >Войти </a>
-					
-						<a class="header_login-btn sign_up-btn btn" href="#">Регистрация</a>
-					
-					
-					</div>
-					
-				
-				<!-- <button class="btn btn_header" type="button">Talk to a human</button> -->
-			</div>
+    <div class="header">
+		<div class="logo">
+			<img style="max-width: 100px;" src="img/logo.png" alt="">
 		</div>
-	</header>
+		<div class="header-menu">
+			<ul>
+				<li><a href="index.html" class="active">Главная</a></li>
+				<li><a href="about.html">О проекте</a></li>
+				<li><a href="interest.html">Интересное</a></li>
+				<li><a href="#">Сбор</a></li>
+			</ul>
+		</div>
+		<div class="user-settings">
+			<div class="dark-light">
+				<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+					stroke-linejoin="round">
+					<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+				</svg>
+			</div>
+			<div class="user-menu">
+				<img src="img/coin.svg" alt="">
+			</div>
+			<img class="user-profile" src="img/signin.png" alt="">
+			<div class="user-name">Личный кабинет</div>
+		</div>
+	</div>
 	<section class="main" id="main">
 		<div class="container">
 			<div class="main_in flex">
