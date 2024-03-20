@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  background: rgb(229, 232, 231);
 }
 
 * {
@@ -73,6 +74,7 @@ textarea {
 body {
   font-size: 14px;
   line-height: 19px;
+  color: #242424;
   width: 100%;
   font-family: 'Manrope', arial, sans-serif;
 }
