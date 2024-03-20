@@ -95,13 +95,7 @@ section {
   padding: 100px 0;
 }
 
-.sec_tit {
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 57px;
-  text-align: center;
-  margin: 0 auto;
-}
+
 
 .color {
   color: #BE963F;
@@ -207,12 +201,6 @@ button.active {
   color: #fff;
 }
 
-.text {
-  border: 2px solid #000;
-  width: 400px;
-  padding: 25px 15px;
-  min-height: 200px;
-}
 
 /* Malika */
 
@@ -626,4 +614,28 @@ canvas {
   display: block;
 }
 
-
+model-viewer{
+  width:30%;
+  height: 100vh;
+}
+@media (max-width: 1024px) {
+model-viewer{
+  height:550px;
+}
+}
+@media (max-width: 767px) {
+model-viewer{
+  height:350px;
+}
+}
+.text{
+  width: 50%;
+}
+.main_txt{
+	font-weight: 700;
+	line-height: 42px;
+	text-align: center;
+	font-size: 40px;
+	color: #106b41;
+	margin: 0 auto;
+}
