@@ -3,156 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEB BEKS</title>
+  <title>Металл</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/metal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>window.sentryOnLoad = function () {
-    Sentry.init({
-      ignoreErrors: ['ga is not defined', 'ga.getAll is not a function'],
-    });
-  };</script>
-<script src="js/5eb8d58117d14638858f28b39d3afe37.min.js" crossorigin="anonymous" defer="defer"></script>
-<link rel="preload" as="script" href="https://www.googletagmanager.com/gtm.js?id=GTM-MGKV46">
+      Sentry.init({
+        ignoreErrors: ['ga is not defined', 'ga.getAll is not a function'],
+      });
+    };</script>
+  <script src="js/5eb8d58117d14638858f28b39d3afe37.min.js" crossorigin="anonymous" defer="defer"></script>
+  <link rel="preload" as="script" href="https://www.googletagmanager.com/gtm.js?id=GTM-MGKV46">
 
 
-<script>window.addEventListener("load", function () {
-    document.getElementsByTagName("head")[0].appendChild(
-      new DOMParser().parseFromString('<link rel="stylesheet" media="screen" href="https://assets.cgtrader.com/assets/fast_categories_page/fast_categories-dbf8e9529638c692a0d8e363a86e05bf5bb6b458c1a7e4da4918d06156e9b50b.css" />', 'text/html').head.firstChild
-    )
-  })
-</script>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://www.cgtrader.com/3d-models" rel="canonical">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
+  <script>window.addEventListener("load", function () {
+      document.getElementsByTagName("head")[0].appendChild(
+        new DOMParser().parseFromString('<link rel="stylesheet" media="screen" href="https://assets.cgtrader.com/assets/fast_categories_page/fast_categories-dbf8e9529638c692a0d8e363a86e05bf5bb6b458c1a7e4da4918d06156e9b50b.css" />', 'text/html').head.firstChild
+      )
+    })
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://www.cgtrader.com/3d-models" rel="canonical">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
 </head>
+
 <body>
 
   <!-- <div class="canvas3d"></div>
 <script src="https://prod.spline.design/fmBGWBVqDB7ofu-J/scene.splinecode"></script>
 	<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.66/build/spline-viewer.js"></script>
 	<spline-viewer url="https://prod.spline.design/fmBGWBVqDB7ofu-J/scene.splinecode"></spline-viewer> -->
-=======
-  <header class="header">
-		<div class="container">
-			<div class="header_body flex">
-				<div class="header_burger">
-					<span></span>
-				</div>
-				<a href="index.html" class="header_logo">
-					<img src="img/icons/logotrans.png" alt="">
-				</a>
 
-				<nav class="header_menu">
-					<ul class="header_list flex">
-						<li>
-							<a href="index.html" class="header_link">Главная </a>
-						</li>
-						<li>
-							<a href="#case" class="header_link">О проекте </a>
-						</li>
-                        <li>
-							<a href="interest.html" class="header_link">Интересное</a>
-						</li>
-						<li>
-							<a href="#services" class="header_link">Сбор &bigtriangledown;</a>
+  <div class="header">
+    <div class="logo">
+      <img style="max-width: 100px;" src="img/logo.png" alt="">
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="interest.html">Интересное</a></li>
+        <li><a href="#">Сбор</a></li>
+      </ul>
+    </div>
+    <div class="user-settings">
+      <div class="dark-light">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </div>
+      <div class="user-menu">
+        <img src="img/coin.svg" alt="">
+      </div>
+      <img class="user-profile" src="img/signin.png" alt="">
+      <div class="user-name">Личный кабинет</div>
+    </div>
+  </div>
 
-							<ul>
-								<li><a href="#" class="header_link">Макулатура</a></li>
-								<li><a href="#" class="header_link">Пластик</a></li>
-								<li><a href="glass.html" class="header_link">Стекло</a></li>
-								<li><a href="metal.html" class="header_link">Металл</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#blog" class="header_link"></a>
-						</li>
-
-					</ul>
-				</nav>
-				<div class="header_login-btns flex">
-						<a class="header_login-btn sign_in-btn btn" href="autorization.html" >Войти </a>
-					
-						<a class="header_login-btn sign_up-btn btn" href="#">Регистрация</a>
-					
-					
-					</div>
-					
-				
-				<!-- <button class="btn btn_header" type="button">Talk to a human</button> -->
-			</div>
-		</div>
-	</header>
->>>>>>> d5a8c43eba655473558645dddde13f14bb69bd56
   <section>
-		<div class="swiper">
-		  <div class="swiper-wrapper">
-			<div class="swiper-slide swiper-slide--one">
-		
-			
-					<model-viewer
-					src="models/aluminium_can-_280ml/scene.gltf"
-					shadow-intensity="1"
-					disable-zoom
-					camera-controls
-					auto-rotate
-					></model-viewer>
-				 
-			  
-			</div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one">
 
 
-			<div class="swiper-slide swiper-slide--two">
-				<model-viewer
-				src="models/brass_knuckle/scene.gltf"
-				shadow-intensity="1"
-				disable-zoom
-				camera-controls
-				auto-rotate></model-viewer>
-			 
-			</div>
-	  
-			<div class="swiper-slide swiper-slide--three">
-				<model-viewer
-				src="models/galvanised_steel_bucket/scene.gltf"
-				shadow-intensity="1"
-				disable-zoom
-				camera-controls
-				auto-rotate></model-viewer>
-			 
-			</div>
-	  
-			<div class="swiper-slide swiper-slide--four">
-				<model-viewer
-				src="models/iron_lock/scene.gltf"
-				shadow-intensity="1"
-				disable-zoom
-				camera-controls
-				auto-rotate></model-viewer>
-			 
-			</div>
-	  
-			<div class="swiper-slide swiper-slide--five">
-				<model-viewer
-				src="models/titanium_frame_glass/scene.gltf"
-				shadow-intensity="1"
-				disable-zoom
-				camera-controls
-				auto-rotate></model-viewer>
-			 
-			</div>
-		  </div>
-		  <!-- Add Pagination -->
-		  <div class="swiper-pagination"></div>
-		</div>
-	  </section>
+          <model-viewer src="models/aluminium_can-_280ml/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
+            auto-rotate></model-viewer>
 
 
-<div class="ag-format-container">
+        </div>
+
+
+        <div class="swiper-slide swiper-slide--two">
+          <model-viewer src="models/brass_knuckle/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
+            auto-rotate></model-viewer>
+
+        </div>
+
+        <div class="swiper-slide swiper-slide--three">
+          <model-viewer src="models/galvanised_steel_bucket/scene.gltf" shadow-intensity="1" disable-zoom
+            camera-controls auto-rotate></model-viewer>
+
+        </div>
+
+        <div class="swiper-slide swiper-slide--four">
+          <model-viewer src="models/iron_lock/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
+            auto-rotate></model-viewer>
+
+        </div>
+
+        <div class="swiper-slide swiper-slide--five">
+          <model-viewer src="models/titanium_frame_glass/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
+            auto-rotate></model-viewer>
+
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+  <div class="ag-format-container">
     <div class="ag-create_box">
       <a href="#" class="js-create_video ag-create_item">
         <video muted="" playsinline="">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/statue-xpa-full.mp4" type="video/mp4">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/statue-xpa-full.webm" type="video/webm">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/statue-xpa-full.mp4"
+            type="video/mp4">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/statue-xpa-full.webm"
+            type="video/webm">
         </video>
 
         <svg viewBox="0 0 411 431" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -168,8 +136,12 @@
 
       <a href="#" class="js-create_video ag-create_item">
         <video muted="" playsinline="">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/dollar-xpa-r.mp4" type="video/mp4">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/dollar-xpa-r.webm" type="video/webm">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/dollar-xpa-r.mp4"
+            type="video/mp4">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/dollar-xpa-r.webm"
+            type="video/webm">
         </video>
 
         <svg viewBox="0 0 411 431" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -185,8 +157,12 @@
 
       <a href="#" class="js-create_video ag-create_item">
         <video muted="" playsinline="">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/mac-xpa-r.mp4" type="video/mp4">
-          <source src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/mac-xpa-r.webm" type="video/webm">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/mac-xpa-r.mp4"
+            type="video/mp4">
+          <source
+            src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/item-svg-video/video/mac-xpa-r.webm"
+            type="video/webm">
         </video>
 
         <svg viewBox="0 0 411 431" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -201,7 +177,89 @@
       </a>
     </div>
   </div>
+  <section class="faq">
+    <div class="container">
+      <h2 class="sec_tit">FAQ- Часто задаваемые вопросы</h2>
 
+      <div class="faq_all">
+        <div class="accordion">
+
+          <article>
+            <input id="article1" type="radio" name="articles" checked>
+            <label for="article1">
+              <h2 class="ques">Какие виды металлов существуют?</h2>
+            </label>
+            <div class="ques_txt">
+              Существует множество видов металлов, включая железо, алюминий, медь, олово, цинк, никель,
+              свинец,
+              золото, серебро и т. д. Каждый из них имеет свои уникальные свойства и применения.
+            </div>
+          </article>
+
+          <article>
+            <input id="article2" type="radio" name="articles">
+            <label for="article2">
+              <h2 class="ques">Какие способы переработки металлов существуют?</h2>
+            </label>
+            <div class="ques_txt">
+              Металлы могут быть переработаны с использованием различных методов, таких как литье,
+              штамповка,
+              прессование, лазерная резка, термическая обработка и многие другие.
+            </div>
+          </article>
+
+          <article>
+            <input id="article3" type="radio" name="articles">
+            <label for="article3">
+              <h2 class="ques">Как и куда можно сдать металл на переработку?</h2>
+            </label>
+            <div class="ques_txt">
+              Множество предприятий занимаются приемом металлолома для последующей переработки. Вы можете
+              обратиться к местным металлоломным пунктам или компаниям, специализирующимся на переработке
+              металла. Также существуют программы переработки металла, организованные государственными или
+              муниципальными учреждениями.
+            </div>
+          </article>
+
+          <article>
+            <input id="article4" type="radio" name="articles">
+            <label for="article4">
+              <h2 class="ques">Каковы преимущества переработки металла?</h2>
+            </label>
+            <div class="ques_txt">
+              Переработка металла позволяет сэкономить природные ресурсы, снизить затраты на производство
+              нового металла, уменьшить загрязнение окружающей среды и снизить количество отходов.
+            </div>
+          </article>
+
+          <article>
+            <input id="article5" type="radio" name="articles">
+            <label for="article5">
+              <h2 class="ques">Какие металлические сплавы считаются наиболее прочными?</h2>
+            </label>
+            <div class="ques_txt">
+              Некоторые из самых прочных металлических сплавов включают в себя титановые сплавы, стальные
+              сплавы с добавлением хрома и молибдена, а также алюминиевые сплавы.
+            </div>
+          </article>
+
+          <article>
+            <input id="article6" type="radio" name="articles">
+            <label for="article6">
+              <h2 class="ques">Какой металл является самым тяжелым?</h2>
+            </label>
+            <div class="ques_txt">
+              Переработка металла позволяет сэкономить природные ресурсы, снизить затраты на производство
+              нового металла, уменьшить загрязнение окружающей среды и снизить количество отходов.
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
   <footer class="responsive-footer">
     <div class="responsive-footer__logo responsive-footer__logo--mobile"><a href="">Here</a></div>
     <div class="responsive-footer__middle-row row">
@@ -306,9 +364,9 @@
           <div class="row">
             <div class="col"><a aria-label="Facebook"
                 class="social-icon-circle social-icon-circle--facebook js-social-icon social-icon-circle--large"
-                data-page="Footer" data-social-network="facebook" href="//www.facebook.com/"
-                target="_blank"><svg aria-hidden="true" class="svg-inline--fa fa-facebook-f fa-w-10"
-                  data-icon="facebook-f" data-prefix="fab" focusable="false" role="img" viewBox="0 0 320 512"
+                data-page="Footer" data-social-network="facebook" href="//www.facebook.com/" target="_blank"><svg
+                  aria-hidden="true" class="svg-inline--fa fa-facebook-f fa-w-10" data-icon="facebook-f"
+                  data-prefix="fab" focusable="false" role="img" viewBox="0 0 320 512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
@@ -316,9 +374,9 @@
                 </svg></a></div>
             <div class="col"><a aria-label="LinkedIn"
                 class="social-icon-circle social-icon-circle--linkedin js-social-icon social-icon-circle--large"
-                data-page="Footer" data-social-network="linkedin" href="//www.linkedin.com/"
-                target="_blank"><svg aria-hidden="true" class="svg-inline--fa fa-linkedin-in fa-w-14"
-                  data-icon="linkedin-in" data-prefix="fab" focusable="false" role="img" viewBox="0 0 448 512"
+                data-page="Footer" data-social-network="linkedin" href="//www.linkedin.com/" target="_blank"><svg
+                  aria-hidden="true" class="svg-inline--fa fa-linkedin-in fa-w-14" data-icon="linkedin-in"
+                  data-prefix="fab" focusable="false" role="img" viewBox="0 0 448 512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
@@ -371,9 +429,10 @@
 
 
 
-	<script src="https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <script src="https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>
-</html> 
+
+</html>
