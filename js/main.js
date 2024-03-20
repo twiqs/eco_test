@@ -49,7 +49,7 @@ function closeModal() {
     document.getElementById("videoModal").style.display = "none";
 }
 
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction();
 };
 
@@ -61,16 +61,16 @@ function scrollFunction() {
     }
 }
 
-let tab = function(){
+let tab = function () {
     let tabNav = document.querySelectorAll('.tabs-nav__item'),
-    tabContent = document.querySelectorAll('.tabs__content'),
-    tabName;
+        tabContent = document.querySelectorAll('.tabs__content'),
+        tabName;
 
-    tabNav.forEach(item=> {
+    tabNav.forEach(item => {
         item.addEventListener('click', selectTabNav)
     })
 
-    function selectTabNav(){
+    function selectTabNav() {
         tabNav.forEach(item => {
             item.classList.remove('is-active')
         });
@@ -78,15 +78,15 @@ let tab = function(){
         tabName = this.getAttribute('data-tab-name');
         selectTabContent(tabName)
     }
-    function selectTabContent(tabName){
+    function selectTabContent(tabName) {
         tabContent.forEach(item => {
-            item.classList.contains(tabName)? item.classList.add('is-active') : item.classList.remove('is-active')
+            item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active')
 
         })
-        
+
     }
 
-    
+
 
 };
 
@@ -98,34 +98,16 @@ tab();
 
 
 const initSlider = () => {
-
     const imageList = document.querySelector(".slider-wrapper .image-list");
-    
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-    
-    // Slide images according to the slide button clicks
-    
+
     slideButtons.forEach(button => {
-    
-    button.addEventListener("click", () => {
-    
-    const direction = button.id === "prev-slide" ? -1: 1;
-    
-    const scrollAmount = imageList.clientWidth * direction;
-    
-    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    
-    });
-    
-    });
-    
-    const handleSlideButtons = () => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAlmount = imageList.clientWidth * direction;
+            imageList.scrollBy({left: scrollAlmount, behavior: "smooth"});
 
-    }
-
-    imageList.addEventListener("scroll", () => {
-    
-    handleSlideButtons();
-    
+        });
     });
 }
+window.addEventListener("load", initSlider);
