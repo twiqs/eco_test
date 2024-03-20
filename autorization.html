@@ -26,12 +26,12 @@
 				<nav class="header_menu">
 					<ul class="header_list flex">
 						<li>
-							<a href="index.html" class="header_link">Главная </a>
+							<a href="main.html" class="header_link">Главная </a>
 						</li>
 						<li>
 							<a href="#case" class="header_link">О проекте </a>
 						</li>
-                        <li>
+						<li>
 							<a href="interest.html" class="header_link">Интересное</a>
 						</li>
 						<li>
@@ -51,14 +51,14 @@
 					</ul>
 				</nav>
 				<div class="header_login-btns flex">
-						<a class="header_login-btn sign_in-btn btn" href="autorization.html" >Войти </a>
-					
-						<a class="header_login-btn sign_up-btn btn" href="#">Регистрация</a>
-					
-					
-					</div>
-					
-				
+					<a class="header_login-btn sign_in-btn btn" href="autorization.html">Войти </a>
+
+					<a class="header_login-btn sign_up-btn btn" href="#">Регистрация</a>
+
+
+				</div>
+
+
 				<!-- <button class="btn btn_header" type="button">Talk to a human</button> -->
 			</div>
 		</div>
@@ -106,29 +106,34 @@
                         <h2 class="form_tit">Добро пожаловать! <br>Заполните форму <br>и получите бонусы!</h2>
                     </div>
                     <div class="form_right">
-                        <a href="" class="change-btn link_sign_in ">Войти</a>
+                        <a href="" class="link_sign_in ">Войти</a>
     
                         <h2 class="auto_tit registr_tit">Регистрация</h2>
                         <div class="form_info">
+                            <div class="input_wrap input_wrap__login flex">
+    
+                                <input id="login_sign_up" class="input input__login" placeholder="Введите логин">
+                                <i class="form-ic fa-solid fa-user"></i>
+                            </div>
     
                             <div class="input_wrap input_wrap__email flex input_registr-email">
     
-                                <input type="email" class="input input__email" placeholder="Введите email">
-                                <i class="form-ic fa-solid fa-user"></i>
+                                <input id="email_sign_up" type="email" class="input input__email" placeholder="Введите email">
+                                <i class="form-ic fa-solid fa-at"></i>
                             </div>
     
                             <div class="input_wrap input_wrap__psw flex">
                                 <i class="form-ic fa-solid fa-lock"></i>
-                                <input type="password" class="input input__psw_sign_up" placeholder="Введите текст">
+                                <input id="password_sign_up" type="password" class="input input__psw_sign_up" placeholder="Введите текст">
                             </div>
 
-                            <!-- <div class="form_terms flex">
+                            <div class="form_terms flex">
                                 <input id="autoCheckbox" type="checkbox" class="form_terms">
                                 <span >Прочитайте нашу <br> <a href="" class="conditions_link">Политику конфиденциальности.</a> </span>
-                            </div> -->
+                            </div>
     
     
-                            <button  id="confetti" class="btn form_btn form_sign_up-btn" type="submit">Login</button>
+                            <button  id="confetti" class="btn form_btn form_sign_in-btn" type="submit">Login</button>
                         </div>
                         
                     </div>

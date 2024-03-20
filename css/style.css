@@ -123,6 +123,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* .btn{
@@ -333,7 +334,7 @@ header {
 /* go-back */
 
 .back-to-top {
-  background-image: url(../img/icons/go-back.svg);
+  background-image: url(../img/icons/up.svg);
   background-position: center;
   position: fixed;
   bottom: 40px;
@@ -351,7 +352,7 @@ header {
 }
 
 .back-to-top:hover {
-  transform: translateY(-15px);
+  transform: scale(1.1);
 }
 
 
@@ -547,6 +548,12 @@ canvas {
   top: 11px;
   left: -70px;
 }
+.fa-at::before {
+  font-family: FontAwesome;
+  content: "\40";
+  top: 11px;
+  left: -70px;
+}
 
 .form_btn {
   background: #00B871;
@@ -618,3 +625,5 @@ canvas {
 .open {
   display: block;
 }
+
+
