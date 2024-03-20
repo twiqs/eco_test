@@ -82,7 +82,7 @@ body {
   width: 100%;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .dn {
@@ -693,6 +693,22 @@ canvas {
 }
 .sign_up-form{
   display: none;
+}
+header {
+  /* width: 350px; */
+  border-bottom-left-radius: 3px;
+  background: inherit;
+  /* box-shadow: 0 0 5px black; */
+  background-color: rgba(225, 221, 222, .8);
+  backdrop-filter: blur(2px);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px;
 }
 
 /* about */
