@@ -123,6 +123,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 /* .btn{
 	background: linear-gradient(93.7deg, #F3C87A -1.69%, #F3EECA 37.58%, #B39556 77.08%, #EED489 109.84%);
@@ -162,6 +163,7 @@ section {
     border-radius: 10px;
     color: #FFF;
     transition: 0.5s;
+    margin: 0 auto;
 }
 
 
@@ -329,7 +331,7 @@ header{
 /* go-back */
 
 .back-to-top {
-  background-image: url(../img/icons/go-back.svg);
+  background-image: url(../img/icons/up.svg);
   background-position: center;
   position: fixed;
   bottom: 40px;
@@ -347,7 +349,7 @@ header{
 }
 
 .back-to-top:hover {
-  transform: translateY(-15px);
+  transform: scale(1.1);
 }
 
 
@@ -611,3 +613,5 @@ canvas {
 .open{
   display: block;
 }
+
+
