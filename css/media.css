@@ -7,6 +7,9 @@
 	.header_menu {
 		margin-left: -100px;
 	}
+	.tab_img img{
+		width: 490px;
+	}
 }
 @media screen and (max-width: 990px) {
 	.container{
@@ -18,10 +21,23 @@
 	.after{
 		display: none;
 	}
+	.about_card{
+		width: 300px;
+
+	}
+	.content_left,
+	.content_right{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.tab_img img{
+		width: 90%;
+	}
+
 }
 @media screen and (max-width: 780px) {
 	.container{
-		max-width: 510px;
+		max-width: 610px;
 	}
 	.header_burger {
 		display: block;
