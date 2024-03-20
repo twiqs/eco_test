@@ -1,0 +1,11 @@
+Model Information:
+* title:	Burger King Paper Bag
+* source:	https://sketchfab.com/3d-models/burger-king-paper-bag-d6814ce433f64d0da49f4a8b1ca3bb00
+* author:	RPSebb (https://sketchfab.com/RPSebb)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Burger King Paper Bag" (https://sketchfab.com/3d-models/burger-king-paper-bag-d6814ce433f64d0da49f4a8b1ca3bb00) by RPSebb (https://sketchfab.com/RPSebb) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

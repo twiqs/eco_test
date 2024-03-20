@@ -1,0 +1,11 @@
+Model Information:
+* title:	Paper Pile (Pilha de papéis)
+* source:	https://sketchfab.com/3d-models/paper-pile-pilha-de-papeis-7ad13bc9bf57467b95f5d51ba965284b
+* author:	ArthurBoni (https://sketchfab.com/ArthurBoni)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Paper Pile (Pilha de papéis)" (https://sketchfab.com/3d-models/paper-pile-pilha-de-papeis-7ad13bc9bf57467b95f5d51ba965284b) by ArthurBoni (https://sketchfab.com/ArthurBoni) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
