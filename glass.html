@@ -6,13 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/glass.css">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-		rel="stylesheet">
-    <title>Document</title>
+	<!-- style swiper -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
+    <title>Glass</title>
 <!-- footer -->
     <script>window.addEventListener("load", function () {
         document.getElementsByTagName("head")[0].appendChild(
@@ -49,19 +45,36 @@
 </div>
 
 <body>
-
+    <style>
+        model-viewer{
+            width:50%;
+            height: 50vh;
+        }
+        @media (max-width: 1024px) {
+        model-viewer{
+            height:600px;
+        }
+        }
+        @media (max-width: 767px) {
+        model-viewer{
+            height:350px;
+        }
+        }
+        </style>
     <section class="glass">
         <div class="container flex">
-            <canvas id="canvas"></canvas>
+			<model-viewer src="models/reflection_mirror (1)/scene.gltf" shadow-intensity="1" disable-zoom
+			camera-controls auto-rotate allow="autoplay" ></model-viewer>
             <div class="text">
-                <h2 class="sec_tit">Стекло</h2>
+                <h2 class="sec_tit">Стекло от вас, бонусы для вас.</h2>
             </div>
         </div>
     
     </section>
 
     <section>
-        <div class="swiper">
+       <div class="container">
+		<div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide--one">
                     <model-viewer src="models/glass/scene.gltf" shadow-intensity="1" disable-zoom
@@ -96,11 +109,13 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
+	   </div>
     </section>
 
 
     <footer class="responsive-footer">
-		<div class="responsive-footer__logo responsive-footer__logo--mobile"><a href="">Here</a></div>
+		<div class="container">
+			<div class="responsive-footer__logo responsive-footer__logo--mobile"><a href="">Here</a></div>
 		<div class="responsive-footer__middle-row row">
 		  <div class="col-sm-12 col-md-8 col-lg-9">
 			<div class="responsive-footer__navigation-row row">
@@ -234,6 +249,7 @@
 			</div>
 		  </div>
 		</div>
+		</div>
 	  </footer>
 	 
 	  <script>var form = document.getElementById('subscribe-form')
@@ -270,7 +286,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="js/glass.js"></script>
-	<script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>

@@ -8,16 +8,24 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/metal.css">
-  <!-- Branding Identity -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.sentryOnLoad = function () {
+      Sentry.init({
+        ignoreErrors: ['ga is not defined', 'ga.getAll is not a function'],
+      });
+    };</script>
   <script src="js/5eb8d58117d14638858f28b39d3afe37.min.js" crossorigin="anonymous" defer="defer"></script>
-<!-- footer -->
+  <link rel="preload" as="script" href="https://www.googletagmanager.com/gtm.js?id=GTM-MGKV46">
+
+
   <script>window.addEventListener("load", function () {
       document.getElementsByTagName("head")[0].appendChild(
         new DOMParser().parseFromString('<link rel="stylesheet" media="screen" href="https://assets.cgtrader.com/assets/fast_categories_page/fast_categories-dbf8e9529638c692a0d8e363a86e05bf5bb6b458c1a7e4da4918d06156e9b50b.css" />', 'text/html').head.firstChild
       )
     })
   </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://www.cgtrader.com/3d-models" rel="canonical">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
 </head>
 

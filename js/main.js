@@ -181,3 +181,33 @@ const toggleButton = document.querySelector(".dark-light");
 toggleButton.addEventListener("click", () => {
  document.body.classList.toggle("dark-mode");
 });
+
+var form = document.getElementById('subscribe-form')
+		var email = document.getElementById('email')
+		var emailError = document.querySelector('#email + .error-message')
+	
+		email.addEventListener('input', function (event) {
+		  if (email.validity.valid) {
+			emailError.innerHTML = ''
+			email.classList.remove('is-invalid')
+		  } else {
+			showError()
+		  }
+		})
+	
+		form.addEventListener('submit', function (event) {
+		  if (!email.validity.valid) {
+			event.preventDefault()
+			showError()
+		  }
+		})
+	
+		function showError() {
+		  if (email.validity.valueMissing) {
+			emailError.innerHTML = 'Email is required'
+		  } else if (email.validity.typeMismatch) {
+			emailError.innerHTML = 'Please enter a valid email address'
+		  }
+	
+		  email.classList.add('is-invalid')
+		}
