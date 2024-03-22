@@ -211,3 +211,4 @@ var form = document.getElementById('subscribe-form')
 	
 		  email.classList.add('is-invalid')
 		}
+        
