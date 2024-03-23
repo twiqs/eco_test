@@ -1,0 +1,11 @@
+Model Information:
+* title:	Glass Jar With Wooden Cover
+* source:	https://sketchfab.com/3d-models/glass-jar-with-wooden-cover-379a8c05a676498e9147cd75c4e7fbfb
+* author:	DevelopRstore (https://sketchfab.com/developrstore)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Glass Jar With Wooden Cover" (https://sketchfab.com/3d-models/glass-jar-with-wooden-cover-379a8c05a676498e9147cd75c4e7fbfb) by DevelopRstore (https://sketchfab.com/developrstore) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

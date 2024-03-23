@@ -7,12 +7,7 @@
   .glass{
     overflow: hidden;
   }
-  
-  canvas {
-    width: 60%;
-    height: 50%;
-    object-fit: contain;
-  }
+
   .sec_tit {
 	padding: 130px 0;
 	font-weight: 700;
@@ -32,9 +27,7 @@
 }
 
 section {
-  /* position: relative; */
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +61,7 @@ section {
 
 
 .swiper-slide model-viewer {
-  color: #fff;
+
   width: 300px;
   height: 410px;
   margin: 0 auto;
@@ -744,3 +737,4 @@ button.swiper-pagination-bullet {
     backface-visibility: hidden;
     overflow: hidden
 }
+

@@ -6,53 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/glass.css">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-		rel="stylesheet">
-    <title>Document</title>
+	<!-- style swiper -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
+    <title>Glass</title>
 <!-- footer -->
-    <script>window.addEventListener("load", function () {
-        document.getElementsByTagName("head")[0].appendChild(
-          new DOMParser().parseFromString('<link rel="stylesheet" media="screen" href="https://assets.cgtrader.com/assets/fast_categories_page/fast_categories-dbf8e9529638c692a0d8e363a86e05bf5bb6b458c1a7e4da4918d06156e9b50b.css" />', 'text/html').head.firstChild
-        )
-      })
-    </script>
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-<div class="header">
-	<div class="logo">
-		<img style="max-width: 100px;" src="img/logo.png" alt="">
-	</div>
-	<div class="header-menu">
-		<ul>
-			<li><a href="index.html" class="active">Главная</a></li>
-			<li><a href="about.html">О проекте</a></li>
-			<li><a href="interest.html">Интересное</a></li>
-			<li><a href="#">Сбор</a></li>
-		</ul>
-	</div>
-	<div class="user-settings">
-		<div class="dark-light">
-			<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
-				stroke-linejoin="round">
-				<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-			</svg>
-		</div>
-		<div class="user-menu">
-			<img src="img/coin.svg" alt="">
-		</div>
-		<img class="user-profile" src="img/signin.png" alt="">
-		<div class="user-name">Личный кабинет</div>
-	</div>
-</div>
+
 
 <body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img style="max-width: 100px;" src="img/logo.png" alt="">
+			</div>
+			<div class="header-menu flex">
+				<ul>
+					<li><a href="index.html" class="active">Главная</a></li>
+					<li><a href="about.html">О проекте</a></li>
+					<li><a href="interest.html">Интересное</a></li>
+				</ul>
+				<div class="dropdown">
+					<button>Сбор</button>
+					<div class="dropdown-content">
+					<a href="metal.html" style="margin-left: 10px;">Металл</a>
+					<a href="plastic.html" style="margin-left: 10px;">Пластик</a>
+					<a href="glass.html" style="margin-left: 10px;">Стекло</a>
+					<a href="paper.html" style="margin-left: 10px;">Макулатура</a>
+					</div>
+				  </div>
+			</div>
+			<div class="user-settings">
+				<div class="dark-light">
+					<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+					</svg>
+				</div>
+				<div class="user-menu">
+					<img src="img/" alt=""><a href="" class="user-name">Бонусы</a>
+				</div>
+				<img class="user-profile"
+						src="img/signin.png"></img>
+					<a href="autorization.html" class="user-name">Личный кабинет</a>
+			</div>
+		</div>
+		<div class="wrapper">
+		</div>
+	</div>
 
+    <style>
+        model-viewer{
+            width:50%;
+            height: 50vh;
+        }
+        @media (max-width: 1024px) {
+        model-viewer{
+            height:600px;
+        }
+        }
+        @media (max-width: 767px) {
+        model-viewer{
+            height:350px;
+        }
+        }
+        </style>
     <section class="glass">
         <div class="container flex">
-            <canvas id="canvas"></canvas>
+			<model-viewer src="models/reflection_mirror/scene.gltf" shadow-intensity="1" disable-zoom
+			camera-controls auto-rotate allow="autoplay" ></model-viewer>
             <div class="text">
                 <h2 class="sec_tit">Стекло</h2>
             </div>
@@ -64,35 +86,31 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide--one">
-
-
-                    <model-viewer src="models/aluminium_can-_280ml/scene.gltf" shadow-intensity="1" disable-zoom
+                    <model-viewer src="models/glass/scene.gltf" shadow-intensity="1" disable-zoom
                         camera-controls auto-rotate></model-viewer>
-
-
                 </div>
 
 
                 <div class="swiper-slide swiper-slide--two">
-                    <model-viewer src="models/brass_knuckle/scene.gltf" shadow-intensity="1" disable-zoom
+                    <model-viewer src="models/glass_jar_with_wooden_cover/scene.gltf" shadow-intensity="1" disable-zoom
                         camera-controls auto-rotate></model-viewer>
 
                 </div>
 
                 <div class="swiper-slide swiper-slide--three">
-                    <model-viewer src="models/galvanised_steel_bucket/scene.gltf" shadow-intensity="1" disable-zoom
+                    <model-viewer src="models/glass_waiting_room_table/scene.gltf" shadow-intensity="1" disable-zoom
                         camera-controls auto-rotate></model-viewer>
 
                 </div>
 
                 <div class="swiper-slide swiper-slide--four">
-                    <model-viewer src="models/iron_lock/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
+                    <model-viewer src="models/ikea_glass/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
                         auto-rotate></model-viewer>
 
                 </div>
 
                 <div class="swiper-slide swiper-slide--five">
-                    <model-viewer src="models/titanium_frame_glass/scene.gltf" shadow-intensity="1" disable-zoom
+                    <model-viewer src="models/shattered_glass/scene.gltf" shadow-intensity="1" disable-zoom
                         camera-controls auto-rotate></model-viewer>
 
                 </div>
@@ -273,7 +291,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script src="js/glass.js"></script>
+	<script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>

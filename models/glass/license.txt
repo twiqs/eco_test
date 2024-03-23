@@ -1,0 +1,11 @@
+Model Information:
+* title:	Glass
+* source:	https://sketchfab.com/3d-models/glass-def683d028954eb6ad58061a12058a55
+* author:	ReynaldoAli (https://sketchfab.com/ReynaldoAli)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Glass" (https://sketchfab.com/3d-models/glass-def683d028954eb6ad58061a12058a55) by ReynaldoAli (https://sketchfab.com/ReynaldoAli) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
