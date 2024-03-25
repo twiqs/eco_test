@@ -164,3 +164,150 @@
 		max-width: 100%;
 	}
 }
+
+@media screen and (max-width: 1190px) {
+ 
+	.main_in{
+	 flex-direction: column;
+	}
+	.main_texts{
+	 margin: 0 auto;
+	 text-align: center;
+	 margin-top: 20px;
+	 margin-bottom: 70px;
+	}
+	.main_left{
+	 width: 100%;
+	}
+	.main_tit{
+	 text-align: center;
+	 margin: 0 auto;
+	}
+	.browse_cards{
+	 flex-wrap: wrap;
+	}
+	.browse_txt{
+	 font-size: 16px;
+	font-weight: 200;
+	line-height: 24px;
+	width: 150px;
+	}
+	
+	.browse_tit {
+	 font-size: 18px;
+	 margin-bottom: 7px;
+	 padding-top: 8px;
+	  }
+	  .browse_ic img{
+	 width: 100px;
+	  }
+   }
+   
+   @media screen and (max-width: 990px) {
+	.container {
+	 max-width: 850px;
+	}
+   
+	.header_menu {
+	 margin-left: 0px;
+	}
+	.after{
+	 display: none;
+	}
+	.market_in{
+	 margin: 0 auto;
+	 margin-bottom: 20px;
+	}
+	.market{
+	 margin-top: 80px;
+	}
+	.browse_cards{
+	 flex-direction: column;
+	 
+	}
+	.browse_card{
+	 width: 400px;
+	 margin-bottom: 20px;
+	}
+	
+	.browse_ic {
+	
+	 width: 100px;
+	 height: auto;
+	 max-width: 100%;
+	  }
+	  
+	  
+	  .browse_tit {
+	 color: #2c2f24;
+	 text-align: center;
+	 font-size: 24px;
+	 font-weight: 700;
+	 line-height: 30px;
+	 /* 125% */
+	 letter-spacing: -0.72px;
+	 margin-bottom: 25px;
+	 margin-bottom: 20px;
+	  }
+	  
+	  .browse_txt {
+	 color: var(--neutral-06, #414536);
+	 text-align: center;
+	  
+	 /* Body/16px/Regular */
+	 font-size: 26px;
+	 font-weight: 400;
+	 line-height: 24px;
+	 width: 238px;
+	 margin-bottom: 30px;
+	  }
+	  
+	  .browse_ic img{
+	 width: 150px;
+	  }
+   }
+   
+   @media screen and (max-width: 850px) {
+	.container {
+	 max-width: 750px;
+	}
+	.main_right{
+	 width: 100%;
+	}
+	.main_img img {
+	 margin: 0 auto;
+	}
+	.main{
+	 margin-top: 52px;
+	}
+   }
+   
+   @media screen and (max-width: 780px) {
+	.container {
+	 max-width: 510px;
+	}
+   }
+   @media screen and (max-width: 580px) {
+	.container {
+	 max-width: 460px;
+	}
+	.main_img img{
+	 width: 300px;
+	 height: 300px;
+	}
+   }
+   @media screen and (max-width: 540px) {
+	.container {
+	 max-width: 420px;
+	}
+	.main_tit{
+	 font-size: 35px;
+	}
+   }
+   
+   @media screen and (max-width: 450px) {
+	.container {
+	 max-width: 100%;
+	}
+   
+   }
