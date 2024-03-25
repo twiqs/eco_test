@@ -867,7 +867,7 @@ header {
 
 model-viewer {
   width: 30%;
-  height: 100vh;
+  height: 50vh;
 }
 
 @media (max-width: 1024px) {
@@ -944,4 +944,24 @@ model-viewer {
     font-size: 14px;
     justify-content: space-between;
 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+#container {
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	user-select: none;
 }
