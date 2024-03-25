@@ -867,7 +867,7 @@ header {
 
 model-viewer {
   width: 30%;
-  height: 50vh;
+  height: 100vh;
 }
 
 @media (max-width: 1024px) {

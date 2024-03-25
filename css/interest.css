@@ -639,4 +639,5 @@ padding-top: 20px;
   #toggle3:checked ~ #section-2 .info-container{
 	transition: transform 0.5s, opacity 0.5s;
   }
+
   
