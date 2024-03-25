@@ -614,7 +614,7 @@ input {
     -moz-box-sizing: border-box;
     color: inherit;
     font-family: inherit;
-    color: #fff;
+    color:rgb(66, 67, 72);
 }
 .form-wrap form .button {
     margin: 1em 0;
