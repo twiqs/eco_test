@@ -158,7 +158,7 @@ b {
     font-size: 50px;
     text-shadow: 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 5vh var(--lights);
     max-width: 80%;
-    margin: 60px auto;
+    margin-bottom: 50px;
     color:rgb(16, 120, 61);
 }
 
