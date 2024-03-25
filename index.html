@@ -21,20 +21,20 @@
 </head>
 
 <body>
-		<div class="container">
-			<div class="header">
-				<div class="logo">
-					<img style="max-width: 100px;" src="img/logo.png" alt="">
-				</div>
-				<div class="header-menu flex">
-					<ul>
-						<li><a href="index.html" class="active">Главная</a></li>
-						<li><a href="about.html">О проекте</a></li>
-						<li><a href="interest.html">Интересное</a></li>
-					</ul>
-					<div class="dropdown">
-						<button>Сбор</button>
-						<div class="dropdown-content">
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img style="max-width: 100px;" src="img/logo.png" alt="">
+			</div>
+			<div class="header-menu flex">
+				<ul>
+					<li><a href="index.html" class="active">Главная</a></li>
+					<li><a href="about.html">О проекте</a></li>
+					<li><a href="interest.html">Интересное</a></li>
+				</ul>
+				<div class="dropdown">
+					<button>Сбор</button>
+					<div class="dropdown-content">
 						<a href="metal.html" style="margin-left: 10px;">Металл</a>
 						<a href="plastic.html" style="margin-left: 10px;">Пластик</a>
 						<a href="glass.html" style="margin-left: 10px;">Стекло</a>
@@ -67,18 +67,26 @@
 		<div class="container flex">
 			<model-viewer src="models/earth/scene.gltf" shadow-intensity="1" disable-zoom camera-controls
 				auto-rotate></model-viewer>
-			<div class="text">
-				<h2 class="main_txt">
-
-					Добро пожаловать в мир устойчивой <b> переработки и сборки материалов!</b>
-
-				</h2>
-				<div class="main_in flex">
-					<div class="buttons_main">
-						<a href="index2.html" class="btn  btn_green">Подробнее </a>
-						<div class="play_video">
-							<button class="play-button" onclick="openModal()"></button>
-						</div>
+			<div id="container">
+				<span id="text1"></span>
+				<span id="text2"></span>
+			</div>
+			<svg id="filters">
+				<defs>
+					<filter id="threshold">
+						<feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+					</filter>
+				</defs>
+			</svg>
+			<!-- <div class="main_in flex">
+				<div class="buttons_main">
+					<a href="index2.html" class="btn  btn_green">Подробнее </a>
+					<div class="play_video">
+						<button class="play-button" onclick="openModal()"></button>
+					</div>
 
 				</div>
 
@@ -92,36 +100,36 @@
 	</section>
 
 
-    <section id="about" class="about">
+	<section id="about" class="about">
 		<div class="container">
-                <h3 class="sec_sub_tit">Что мы предлагаем:</h3>
-            <div class="about_cards flex ">
-                <div class="about_card ">
-                    <div class="adout_icon micon1"></div>
-                    <h5 class="card__tit">Сбор,переработка металла</h5>
-                    
-                    <a href="metal.html" class="btn_white">Подробнее ></a>
-                </div>
+			<h3 class="sec_sub_tit">Что мы предлагаем:</h3>
+			<div class="about_cards flex ">
 				<div class="about_card ">
-                    <div class="adout_icon micon2"></div>
-                    <h5 class="card__tit">Переработка стекла</h5>
-                  
-					<a href="glass.html" class="btn_white">Подробнее ></a>
-                </div>
+					<div class="adout_icon micon1"></div>
+					<h5 class="card__tit">Сбор и переработка металла</h5>
+
+					<a href="#" type="button" class=" btn btn_white">Подробнее</a>
+				</div>
 				<div class="about_card ">
-                    <div class="adout_icon micon3"></div>
-                    <h5 class="card__tit">Утилизация макулатуры</h5>
-               
-					<a href="paper.html" class="btn_white">Подробнее ></a>
-                </div>
+					<div class="adout_icon micon2"></div>
+					<h5 class="card__tit">Переработка стекла</h5>
+
+					<a href="#" type="button" class="btn btn_white">Подробнее</a>
+				</div>
 				<div class="about_card ">
-                    <div class="adout_icon micon4"></div>
-                    <h5 class="card__tit">Пластиковая переработка</h5>
-               
-					<a href="plastic.html" class="btn_white">Подробнее ></a>
-                </div>
-            </div>
-			<a href="#header" class="back-to-top">
+					<div class="adout_icon micon3"></div>
+					<h5 class="card__tit">Утилизация макулатуры</h5>
+
+					<a href="#" type="button" class="btn btn_white">Подробнее</a>
+				</div>
+				<div class="about_card ">
+					<div class="adout_icon micon4"></div>
+					<h5 class="card__tit">Пластиковая переработка</h5>
+
+					<a href="#" type="button" class="btn btn_white">Подробнее</a>
+				</div>
+			</div>
+			<a href="#main" class="back-to-top">
 			</a>
 		</div>
 
@@ -130,21 +138,21 @@
 		<div class="container">
 			<div class="modal_button">
 				<h3 class="sec_sub_tit tit_green">О переработке:</h3>
-			<div class="play_video">
-				<button class="play-button" onclick="openModal()"></button>
-			</div>
-			</div>
-
-			</div>
-
-			<div class="modal" id="videoModal">
-				<div class="modal-content">
-					<span class="close" onclick="closeModal()">&times;</span>
-					<!-- <iframe width="100%" height="100%"
-						src="img/видеоролик.mp4"
-						frameborder="0" allowfullscreen></iframe> -->
+				<div class="play_video">
+					<button class="play-button" onclick="openModal()"></button>
 				</div>
 			</div>
+
+		</div>
+
+		<div class="modal" id="videoModal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<!-- <iframe width="100%" height="100%"
+						src="img/видеоролик.mp4"
+						frameborder="0" allowfullscreen></iframe> -->
+			</div>
+		</div>
 
 		<div class="tabs">
 			<div class=" tabs__nav tabs-nav  flex">
@@ -189,14 +197,14 @@
 						</ul>
 
 
+					</div>
+					<div class="content_right">
+						<div class="tab_img">
+							<img src="img/shutterstock.jpg" alt="">
 						</div>
-						<div class="content_right">
-							<div class="tab_img">
-								<img src="img/shutterstock.jpg" alt="">
-							</div>
-							<div class="tab_info2">Переработка металла играет важную роль в создании более устойчивой и
-								экологически безопасной промышленности, способствуя сохранению природных ресурсов и
-								улучшению качества окружающей среды.</div>
+						<div class="tab_info2">Переработка металла играет важную роль в создании более устойчивой и
+							экологически безопасной промышленности, способствуя сохранению природных ресурсов и
+							улучшению качества окружающей среды.</div>
 
 
 					</div>
@@ -238,14 +246,14 @@
 						</ul>
 
 
+					</div>
+					<div class="content_right">
+						<div class="tab_img">
+							<img src="img/si.jpg" alt="">
 						</div>
-						<div class="content_right">
-							<div class="tab_img">
-								<img src="img/si.jpg" alt="">
-							</div>
-							<div class="tab_info2">Переработка стекла играет ключевую роль в устойчивом использовании
-								ресурсов и содействует сохранению окружающей среды, что делает ее важным элементом
-								современной промышленной экологии.</div>
+						<div class="tab_info2">Переработка стекла играет ключевую роль в устойчивом использовании
+							ресурсов и содействует сохранению окружающей среды, что делает ее важным элементом
+							современной промышленной экологии.</div>
 
 
 					</div>
@@ -287,75 +295,75 @@
 						</ul>
 
 
+					</div>
+					<div class="content_right">
+						<div class="tab_img">
+							<img src="img/makulatura.jpg" alt="">
 						</div>
-						<div class="content_right">
-							<div class="tab_img">
-								<img src="img/makulatura.jpg" alt="">
+						<div class="tab_info2">Переработка макулатуры играет важную роль в сокращении потребления
+							ресурсов, защите окружающей среды и создании устойчивых экономических моделей.
+
+
+
+
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="tabs__content tab4">
+				<div class="tab_content-in flex">
+					<div class="content_left">
+						<h3 class="content_tit">
+							Пластик
+						</h3>
+						<ul>
+							<li class="tab_info"><b class="tit_green">Длительный период разложения: </b>
+								Пластиковые изделия могут разлагаться на свалках на протяжении сотен лет.
+								Переработка пластика позволяет уменьшить количество отходов, направляемых на свалку,
+								и сократить негативное воздействие на окружающую среду.</li>
+							<li class="tab_info">
+								<b class="tit_green">Возможность многократной переработки:</b> Многие виды пластика
+								можно перерабатывать несколько раз без потери качества и свойств. Это позволяет
+								создавать новые продукты из переработанного пластика, сокращая потребность в
+								производстве нового сырья.
+							</li>
+							<li class="tab_info"><b class="tit_green">Инновации в технологиях: </b>Развитие новых
+								методов и технологий переработки пластика способствует созданию более эффективных и
+								экологически чистых процессов. Например, возможность переработки различных типов
+								пластика в одном процессе или использование биоразлагаемых пластиков способствует
+								улучшению устойчивости и эффективности этой отрасли.
+							<li class="tab_info">
+								<b class="tit_green">>Уменьшение использования нефти:</b> Переработка пластика
+								позволяет сократить потребление нефти, которая является основным сырьем для
+								производства пластиков. Это способствует уменьшению зависимости от нефтяной
+								промышленности и снижению экологического воздействия добычи и переработки нефти.
+							</li>
+							<li class="tab_info"> <b class="tit_green">Борьба с загрязнением океанов: загрязнение
+									океанов пластиковыми отходами. Путем переработки пластиковых бутылок, пакетов и
+									других изделий их можно превратить в новые продукты, избегая попадания в морские
+									экосистемы.</li>
+						</ul>
+
+
+					</div>
+					<div class="content_right">
+						<div class="tab_img">
+							<img src="img/plastic.webp" alt="">
+						</div>
+						<div class="tab_info2">Переработка пластика играет важную роль в решении проблемы
+							загрязнения окружающей среды пластиковыми отходами и способствует созданию более
+							устойчивой и экологически безопасной промышленности.<div>
+
+
 							</div>
-							<div class="tab_info2">Переработка макулатуры играет важную роль в сокращении потребления
-								ресурсов, защите окружающей среды и создании устойчивых экономических моделей.
-
-
-
-
-
-							</div>
-
-
 						</div>
 					</div>
 				</div>
-				<div class="tabs__content tab4">
-					<div class="tab_content-in flex">
-						<div class="content_left">
-							<h3 class="content_tit">
-								Пластик
-							</h3>
-							<ul>
-								<li class="tab_info"><b class="tit_green">Длительный период разложения: </b>
-									Пластиковые изделия могут разлагаться на свалках на протяжении сотен лет.
-									Переработка пластика позволяет уменьшить количество отходов, направляемых на свалку,
-									и сократить негативное воздействие на окружающую среду.</li>
-								<li class="tab_info">
-									<b class="tit_green">Возможность многократной переработки:</b> Многие виды пластика
-									можно перерабатывать несколько раз без потери качества и свойств. Это позволяет
-									создавать новые продукты из переработанного пластика, сокращая потребность в
-									производстве нового сырья.
-								</li>
-								<li class="tab_info"><b class="tit_green">Инновации в технологиях: </b>Развитие новых
-									методов и технологий переработки пластика способствует созданию более эффективных и
-									экологически чистых процессов. Например, возможность переработки различных типов
-									пластика в одном процессе или использование биоразлагаемых пластиков способствует
-									улучшению устойчивости и эффективности этой отрасли.
-								<li class="tab_info">
-									<b class="tit_green">>Уменьшение использования нефти:</b> Переработка пластика
-									позволяет сократить потребление нефти, которая является основным сырьем для
-									производства пластиков. Это способствует уменьшению зависимости от нефтяной
-									промышленности и снижению экологического воздействия добычи и переработки нефти.
-								</li>
-								<li class="tab_info"> <b class="tit_green">Борьба с загрязнением океанов: загрязнение
-										океанов пластиковыми отходами. Путем переработки пластиковых бутылок, пакетов и
-										других изделий их можно превратить в новые продукты, избегая попадания в морские
-										экосистемы.</li>
-							</ul>
 
-
-						</div>
-						<div class="content_right">
-							<div class="tab_img">
-								<img src="img/plastic.webp" alt="">
-							</div>
-							<div class="tab_info2">Переработка пластика играет важную роль в решении проблемы
-								загрязнения окружающей среды пластиковыми отходами и способствует созданию более
-								устойчивой и экологически безопасной промышленности.<div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
+			</div>
 	</section>
 	<section class="partners">
 		<div class="container ">
