@@ -1011,7 +1011,6 @@ body {
 	background-size: cover;
 	background-position: center right;
 	width: 100%;
-	margin-top: 80px;
 }
 
 .main{
@@ -1411,4 +1410,14 @@ height: 350px;
   }
   .p{
 	padding-bottom: 20px;
+  }
+
+
+  .sec_p{
+    font-size: 32px;
+    line-height: 36px;
+    color: #094112;
+    text-align: center;
+    width: 40%;
+    max-width: 50%;
   }
