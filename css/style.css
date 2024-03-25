@@ -867,7 +867,7 @@ header {
 
 model-viewer {
   width: 30%;
-  height: 50vh;
+  height: 100vh;
 }
 
 @media (max-width: 1024px) {
@@ -1303,7 +1303,8 @@ b{
   
   .card:hover .character {
 	opacity: 1;
-	transform: translate3d(0%, -30%, 100px);}
+	transform: translate3d(0%, -30%, 100px);
+=======
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
@@ -1370,6 +1371,7 @@ body {
 	background-size: cover;
 	background-position: center right;
 	width: 100%;
+	margin-top: 80px;
 }
 
 .main{
@@ -1769,15 +1771,5 @@ height: 350px;
   }
   .p{
 	padding-bottom: 20px;
-
-  }
-
-
-  .sec_p{
-    font-size: 32px;
-    line-height: 36px;
-    color: #094112;
-    text-align: center;
-    width: 40%;
-    max-width: 50%;
+>>>>>>> 9633923d75e421a561baa878b570aea66851c37b
   }
