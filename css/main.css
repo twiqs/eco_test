@@ -159,12 +159,12 @@ b {
     text-shadow: 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 .5vh var(--lights), 0 0 5vh var(--lights);
     max-width: 80%;
     margin: 60px auto;
-    color: rgb(215, 222, 218);
+    color:rgb(16, 120, 61);
 }
 
 .about_card {
     width: calc(100% / 4.3);
-    background: #edebeb;
+    background: var(--header-bg-color);
     border-radius: 10px;
     padding: 15px;
     transition: 1.5s;
