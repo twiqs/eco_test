@@ -930,3 +930,18 @@ model-viewer {
   background-color: var(--header-bg-color);
   color: var(--body-color);
 }
+
+.login .header{
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s;
+    flex-shrink: 0;
+    padding: 0 40px;
+    white-space: nowrap;
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    justify-content: space-between;
+
+}
