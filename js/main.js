@@ -147,7 +147,7 @@ function closeModal() {
     document.getElementById("videoModal").style.display = "none";
 }
 
-window.onscroll = function () {
+window.onscroll = function() {
     scrollFunction();
 };
 
@@ -190,10 +190,6 @@ let tab = function () {
 
 
 tab();
-
-
-// slider
-
 
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
@@ -263,6 +259,9 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+
+
 
 
 const wrapper = document.querySelector(".wrapper");
@@ -338,6 +337,9 @@ var swiper = new Swiper(".swiper", {
       clickable: true
     }
   });
+
+
+
   // Branding Identity
 (function ($) {
   $(function () {
