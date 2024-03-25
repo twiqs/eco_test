@@ -152,7 +152,6 @@ b {
 
 /* about */
 .sec_sub_tit {
-
     font-weight: 500;
     line-height: 19px;
     text-align: center;
@@ -168,7 +167,7 @@ b {
 }
 .about_card {
     width: calc(100% / 4.3);
-    background: var(---bg-color);
+    background: var(--header-bg-color);
     border-radius: 10px;
     padding: 15px;
     transition: 1.5s;
@@ -345,6 +344,7 @@ b {
 }
 
 /* partners */
+
 
 .slider-wrapper .image-list {
     display: grid;
