@@ -945,7 +945,6 @@ model-viewer {
     justify-content: space-between;
 
 }
-<<<<<<< HEAD
 /* footer */
 
 .ag-format-container {
@@ -1304,8 +1303,7 @@ b{
   
   .card:hover .character {
 	opacity: 1;
-	transform: translate3d(0%, -30%, 100px);
-=======
+	transform: translate3d(0%, -30%, 100px);}
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
@@ -1771,7 +1769,7 @@ height: 350px;
   }
   .p{
 	padding-bottom: 20px;
->>>>>>> 9633923d75e421a561baa878b570aea66851c37b
+
   }
 
 
